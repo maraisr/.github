@@ -1,0 +1,44 @@
+name: ✨ New Feature
+description: Nothing like a bit of comradery!
+labels: [feature]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Hi 👋 super stoked in your interest to help out, fill this out to get started!
+  - type: textarea
+    id: description
+    attributes:
+      label: Is this feature in relation to a problem?
+      description: A clear and concise description of what the problem is.
+    validations:
+      required: true
+  - type: textarea
+    id: suggested-solution
+    attributes:
+      label: Describe the solution you'd like
+      description: A clear and concise description of what you want to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: alternative
+    attributes:
+      label: Alternative
+      description: Clear and concise description of any alternative solutions or features you've considered.
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Any other context that might help outline your idea.
+  - type: checkboxes
+    id: checkboxes
+    attributes:
+      label: Validations
+      description: Ye 'ol tick-n-flick
+      options:
+        - label: Follow our [Code of Conduct](https://github.com/maraisr/.github/blob/main/CODE_OF_CONDUCT.md)
+          required: true
+        - label: Read the [Contributing Guide](https://github.com/maraisr/.github/blob/main/CONTRIBUTING.md).
+          required: true
+        - label: Is there already an issue for this?
+          required: true

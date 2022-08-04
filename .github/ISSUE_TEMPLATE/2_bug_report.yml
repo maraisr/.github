@@ -1,0 +1,39 @@
+name: 🐞 Bug report
+description: Report an issue
+labels: [triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Oh oh! Cheers for taking the time to fill this out!
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: To reproduce
+      description: Steps to reproduce the behavior.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checkboxes
+    attributes:
+      label: Validations
+      description: Ye 'ol tick-n-flick
+      options:
+        - label: Follow our [Code of Conduct](https://github.com/maraisr/.github/blob/main/CODE_OF_CONDUCT.md)
+          required: true
+        - label: Read the [Contributing Guide](https://github.com/maraisr/.github/blob/main/CONTRIBUTING.md).
+          required: true
+        - label: Is there already an issue for this?
+          required: true

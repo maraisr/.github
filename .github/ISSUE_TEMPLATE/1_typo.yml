@@ -1,0 +1,15 @@
+name: 📝 Typo Fix
+description: You legend, cheers!
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## PR Welcome!
+
+        Thanks for the your time 🥂, if the typo is somewhat novel — please just raise the pull request. If you spy anything else whilst at it, please just raise a single pull request!
+
+        Cheers 🥳
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
