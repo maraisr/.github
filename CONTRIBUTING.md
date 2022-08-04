@@ -16,19 +16,12 @@ I program on a Mac, so most of this guide will be geared towards nix based machi
 You'll find most of my projects use now use [`pnpm`](https://pnpm.io), there may still be a scattering of npm and yarn
 around. See them, squash it and help [raise a pull request 🚀](#raising-a-pull-request) migrating to pnpm.
 
-| What                                  | Command                                      |
-| ------------------------------------- | -------------------------------------------- |
-| 1. install [Node](https://nodejs.org) | --                                           |
-| 2. enable [`corepack`](#corepack)     | `corepack enable`                            |
-| 3. prepare pnpm                       | `corepack prepare pnpm@7.6.0 --activate`[^1] |
-| 4. install dependencies               | `pnpm i`                                     |
+1. install [Node](https://nodejs.org)
+1. install [`pnpm`](https://pnpm.io/installation) (stable)
+1. install dependencies — `pnpm i`
 
-[^1]:
-    Or the latest _stable_ pnpm version on [npm](https://www.npmjs.com/package/pnpm).
-
-> **Note**: my projects include a `.node-version` file that indicates the node version for the project. I do suggest you
-> install [`fnm`](https://github.com/Schniz/fnm) to make this easier. And then optionally include this in your shell
-> `fnm env --use-on-cd | source`
+> **Note**: my projects include a `volta` property in the `package.json` file that indicates the node version for the project. I do suggest you
+> install [`volta`](https://docs.volta.sh/guide/) to make sure we are both on the same toolchain.
 
 ### 🟧 Rust based projects
 
@@ -109,30 +102,16 @@ But if possible, let your commits tell a story, than a series of `wip` and `f***
 
 ## 📓 References
 
-### Corepack
+### Volta
 
-Available in node as early as v14, but probably only stable in v16.9+. And comes preinstalled with those node binaries.
-
-To enable the functionality;
+A node version manager for node and toolchains.
 
 ```sh
-corepack enable
+curl https://get.volta.sh | bash
+volta install node
 ```
 
-And to prepare or install some `bin` files globally to your machine (aka `pnpm` without a `node` prefix) you can;
-
-```sh
-pushd $HOME/.corepack
-corepack enable --install-directory .
-```
-
-... and then add `$HOME/.corepack` to your path.
-
-eg.
-
-```sh
-set -Ua fish_user_paths $HOME/.corepack
-```
+when using any of the scripts `pnpm run` or `node index.js` or whatever, Volta will ensure the correct version is running.
 
 ### `.editorconfig`
 
