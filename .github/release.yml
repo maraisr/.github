@@ -1,0 +1,11 @@
+changelog:
+  exclude:
+    labels:
+      - skip-release
+  categories:
+    - title: "**Breaking Changes**"
+      labels:
+        - breaking-change
+    - title: "_Features_"
+      labels:
+        - feature
