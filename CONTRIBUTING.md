@@ -24,8 +24,7 @@ around. See them, squash it and help [raise a pull request 🚀](#raising-a-pull
 | 4. install dependencies               | `pnpm i`                                     |
 
 [^1]:
-    Or the latest _stable_ pnpm version on [npm](https://www.npmjs.com/package/pnpm). With corepack, if a project
-    requires something special it'll override for that project.
+    Or the latest _stable_ pnpm version on [npm](https://www.npmjs.com/package/pnpm).
 
 > **Note**: my projects include a `.node-version` file that indicates the node version for the project. I do suggest you
 > install [`fnm`](https://github.com/Schniz/fnm) to make this easier. And then optionally include this in your shell
@@ -34,7 +33,7 @@ around. See them, squash it and help [raise a pull request 🚀](#raising-a-pull
 ### 🟧 Rust based projects
 
 My projects typically run on the `nightly` channel, but for the most part the MSRV if not specified in the project
-readme will be `1.64.0`, mManaged through [rustup](https://rust-lang.github.io/rustup/installation/index.html).
+readme will be `1.64.0`, managed through [rustup](https://rust-lang.github.io/rustup/installation/index.html).
 
 In these projects you'll find a `.rust-toolchain.toml` that describes the targets and channel/version to run against, so
 just a matter of the `cargo build` and `cargo test` we know and love.
