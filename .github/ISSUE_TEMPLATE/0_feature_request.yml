@@ -30,15 +30,3 @@ body:
     attributes:
       label: Additional context
       description: Any other context that might help outline your idea.
-  - type: checkboxes
-    id: checkboxes
-    attributes:
-      label: Validations
-      description: Ye 'ol tick-n-flick
-      options:
-        - label: Follow our [Code of Conduct](https://github.com/maraisr/.github/blob/main/CODE_OF_CONDUCT.md)
-          required: true
-        - label: Read the [Contributing Guide](https://github.com/maraisr/.github/blob/main/CONTRIBUTING.md).
-          required: true
-        - label: Is there already an issue for this?
-          required: true
